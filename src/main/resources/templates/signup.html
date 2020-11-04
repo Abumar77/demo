@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+
+
+
+</head>
+<body>
+<header th:insert="blocks/header :: header"></header>
+
+<div class="container mt-5 mb-5">
+    <h1>Create an account </h1>
+    <form action="/signup/add" method="post">
+        <input type="text" name="fullname" placeholder="Enter the name of post" class="formControl"><br><br>
+        <input type="text" name="email" placeholder="Enter the anons of post" class="formControl"><br><br>
+        <textarea type="text" name="password" placeholder="Enter the full text of post" class="formControl"></textarea>
+        <button type="submit" class="btn btn-success" >Submit</button>
+
+    </form>
+
+</div>
+<div th:insert="blocks/footer :: footer"></div>
+</body>
+</html>
